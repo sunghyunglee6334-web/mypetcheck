@@ -36,6 +36,12 @@ cache/
 # ── ① 사진별 장부 · 실행 결과 (집계는 docs/results/ 로 복사해서 공개) ──
 **/manifests/
 **/reports/
+*.csv
+*.tsv
+*.xlsx
+!docs/results/*.csv
+!docs/results/*.xlsx
+**/json_inspect/
 *.npy
 *.npz
 *.parquet
