@@ -1,0 +1,42 @@
+# 마이펫첵 전체 공통 안전장치 — AI Hub 약관
+# AI Hub 원본 사진 · 라벨 JSON 은 Git 에 올리지 않는다 (어느 폴더든)
+# 올려도 되는 것: 코드, 분할 장부 CSV(파일명·묶음 ID·split), 집계 결과, 문서
+
+# ── 사진 (어느 폴더든 금지) ──
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.heic
+# 문서용 화면 캡처 · 다이어그램만 허용 (원본 사진 아님, PM 확인 후)
+!docs/images/*.png
+
+# ── AI Hub 라벨 · 원본 데이터 ──
+**/data/**/*.json
+**/raw/
+**/labels/
+*.zip
+*.tar
+*.7z
+
+# ── 모델 가중치 · 학습 결과 (용량) ──
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+runs/
+wandb/
+
+# ── 환경 · 개인 설정 ──
+.env
+settings.json
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.cache/
+.DS_Store
+*:Zone.Identifier
