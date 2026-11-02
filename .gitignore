@@ -15,15 +15,15 @@
 *.heic
 *.gif
 # 예외: 문서용 캡처 · 그래프 · Figma 화면 (AI Hub 사진이 보이지 않는 것만, PR 에서 PM 확인)
-!docs/images/*.png
-!docs/results/*.png
+!**/docs/images/*.png
+!**/docs/results/*.png
 
 # ── ① AI Hub 라벨 · 원본 · 가공 데이터 ──
 *.json
 !package.json
 !package-lock.json
 !tsconfig.json
-!configs/*.json
+!**/configs/*.json
 data/
 **/raw/
 **/labels/
@@ -39,8 +39,8 @@ cache/
 *.csv
 *.tsv
 *.xlsx
-!docs/results/*.csv
-!docs/results/*.xlsx
+!**/docs/results/*.csv
+!**/docs/results/*.xlsx
 **/json_inspect/
 *.npy
 *.npz

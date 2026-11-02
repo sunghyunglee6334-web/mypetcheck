@@ -12,7 +12,7 @@ SPLIT_VERSION = "split_v1"
 SEED = 42
 
 # ── 경로 (WSL 기준) ───────────────────────────────────
-# 이 파일이 있는 폴더 = ~/mypetcheck/02_split/eye/  → 결과(manifests, reports)도 이 폴더 안에 생김
+# 이 파일이 있는 폴더 = ~/mypetcheck/mypetcheck_project/02_split/eye/  → 결과(manifests, reports)도 이 폴더 안에 생김
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE
 
@@ -38,7 +38,7 @@ def label_zip_dirs():
 
 
 # crop 256px 캐시: 프로젝트 안 cache 폴더 (WSL 안이라 학습 때 빠름, Git 에는 안 올림)
-PROJECT_ROOT = HERE.parents[1]                 # ~/mypetcheck
+PROJECT_ROOT = HERE.parents[1]                 # ~/mypetcheck/mypetcheck_project
 CACHE_DIR = PROJECT_ROOT / "cache" / "eye_crop256"
 
 # ── 사용 범위 (10/30 결정) ─────────────────────────────

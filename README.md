@@ -40,5 +40,5 @@ git pull origin main
 - `.gitignore` 기준 (공모전 · 정부 지원사업 · 포트폴리오 공통)
   - ① 절대 안 올림 (AI Hub 약관): 원본 사진, 라벨 JSON, crop 캐시, zip, 사진별 장부(manifests), 실행 결과(reports)
   - ② 안 올림 (사업 · 보안): 모델 가중치, API 키(`.env`), 가상환경, 개인 설정
-  - ③ 올림: 코드, 문서, 집계 결과(`docs/results/` 에 직접 복사한 것만), 화면 캡처
+  - ③ 올림: 코드, 문서, 집계 결과(`mypetcheck_project/docs/results/` 에 직접 복사한 것만), 화면 캡처
 - 데이터를 재현하려면 AI Hub 에서 직접 신청해 받는다.
