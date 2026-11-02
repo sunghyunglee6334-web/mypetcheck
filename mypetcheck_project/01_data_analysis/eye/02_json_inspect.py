@@ -18,7 +18,7 @@
 
   # 3) 전체 정밀분석 → 결과 저장
   python3 02_json_inspect.py audit --zip-dir "$L1" "$L2" \
-      --out ~/mypetcheck/01_data_analysis/eye/json_inspect
+      --out ~/mypetcheck/mypetcheck_project/01_data_analysis/eye/json_inspect
 
 원칙
   - 원본 zip은 읽기만 한다 (풀거나 고치지 않음)
@@ -342,7 +342,7 @@ def main():
 
     a = sub.add_parser("audit", help="사용 범위 전체 정밀분석")
     a.add_argument("--zip-dir", nargs="+", required=True)
-    a.add_argument("--out", required=True, help="결과 저장 폴더 (예: ~/mypetcheck/01_data_analysis/eye/json_inspect)")
+    a.add_argument("--out", required=True, help="결과 저장 폴더 (예: ~/mypetcheck/mypetcheck_project/01_data_analysis/eye/json_inspect)")
     a.set_defaults(func=cmd_audit)
 
     args = ap.parse_args()

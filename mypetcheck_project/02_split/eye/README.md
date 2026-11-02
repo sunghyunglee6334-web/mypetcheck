@@ -6,7 +6,7 @@ Split 코드는 전부 이 폴더 하나에 있고, 결과도 이 폴더 안에 
 ## 이 폴더
 
 ```
-~/mypetcheck/02_split/eye/
+~/mypetcheck/mypetcheck_project/02_split/eye/
 ├── split_config.py         설정: 비율·규칙·경로 (여기만 고침, Test 본 뒤에는 안 고침)
 ├── common.py               공통 함수
 ├── split_guard.py          학습·평가 코드가 분할을 읽는 유일한 입구
@@ -22,12 +22,12 @@ Split 코드는 전부 이 폴더 하나에 있고, 결과도 이 폴더 안에 
 ```
 
 - AI Hub 라벨 zip: 윈도우 다운로드 폴더의 `153.반려동물 안구질환 데이터`를 자동으로 찾음 (`/mnt/c/Users/…/Downloads/`). 못 찾으면 `split_config.py` 의 `AIHUB_EYE_DIR` 에 적기
-- crop 캐시: `~/mypetcheck/cache/eye_crop256/` (약 2~3GB)
+- crop 캐시: `~/mypetcheck/mypetcheck_project/cache/eye_crop256/` (약 2~3GB)
 
 ## 실행
 
 ```bash
-cd ~/mypetcheck/02_split/eye
+cd ~/mypetcheck/mypetcheck_project/02_split/eye
 bash run_split.sh --test    # 1) 가짜 데이터로 시험 (/tmp 에만 생김)
 bash run_split.sh           # 2) 진짜 데이터
 ```
